@@ -51,6 +51,7 @@ a {
   background-color: white;
   color: #060042;
   font-weight: bold;
+  border-radius: 30px;
 }
 
 .featured::before {
@@ -61,7 +62,6 @@ a {
   width: calc(100% - 4px);
   height: calc(100% - 4px);
   border: 2px solid #060042;
-  border-radius: 30px;
 }
 
 h2 {
