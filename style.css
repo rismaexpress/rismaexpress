@@ -1,0 +1,109 @@
+html {
+  box-sizing: border-box;
+  font-size: 100%;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+body {
+  /* background-color: #060042;
+  background-image: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    color-stop(2%, #060042),
+    color-stop(100%, #20a391)
+  );
+  background-image: linear-gradient(#060042 2%, #20a39e 108%); */
+  background-image: url(/img/main-banner.png);
+  color: white;
+  min-height: 100vh;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+}
+.logo {
+  width: 10em;
+  border-radius: 50%;
+}
+a:hover,
+a.featured:hover {
+  background-color: #060042;
+  color: white;
+}
+
+a {
+  display: block;
+  margin: 0 auto 15px auto;
+  padding: 15px 20px;
+  color: white;
+  border: 2px solid white;
+  max-width: 25rem;
+  text-decoration: none;
+  font-size: 0.85rem;
+  transition: all 200ms ease-in-out;
+}
+
+.featured {
+  position: relative;
+  background-color: white;
+  color: #060042;
+  font-weight: bold;
+}
+
+.featured::before {
+  content: "";
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  width: calc(100% - 4px);
+  height: calc(100% - 4px);
+  border: 2px solid #060042;
+}
+
+h2 {
+  font-size: 14px;
+  font-weight: normal;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin: 0 auto 15px auto;
+}
+h2.detail {
+  font-weight: bold;
+}
+h1 {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+.channel {
+  display: flex;
+  max-width: 25rem;
+  margin: 0 auto;
+}
+.channel a {
+  flex: 1;
+  margin-right: 10px;
+  padding: 5px 10px;
+  background-color: #060042;
+  border: none;
+}
+
+.channel a:last-child {
+  margin-right: 0px;
+}
+.channel a:hover {
+  text-decoration: underline;
+}
+
+footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  color: white;
+  text-align: center;
+}
+footer p {
+  font-size: small;
+}
